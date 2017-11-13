@@ -252,7 +252,7 @@ def w_msr_prop_1(graph):
 
 if __name__ == '__main__':
     # graph = nx.Graph()
-    # with open("./data/data.in") as f:
+    # with open("./data/data-balanced.in") as f:
     #     for line in f.readlines():
     #         tmp_input = line.strip('\n').split(' ')
     #         graph.add_node(int(tmp_input[0]), value=[])
@@ -262,7 +262,7 @@ if __name__ == '__main__':
     # lcp(graph=graph)
 
     # graph = nx.Graph()
-    # with open("./data/data.in") as f:
+    # with open("./data/data-balanced.in") as f:
     #     for line in f.readlines():
     #         tmp_input = line.strip('\n').split(' ')
     #         graph.add_node(int(tmp_input[0]), value=[])
@@ -287,7 +287,7 @@ if __name__ == '__main__':
     # w_msr_prop_1(graph=graph)
 
     # graph = nx.Graph()
-    # with open("./data/data.in") as f:
+    # with open("./data/data-balanced.in") as f:
     #     for line in f.readlines():
     #         tmp_input = line.strip('\n').split(' ')
     #         graph.add_node(int(tmp_input[0]), value=[])
@@ -296,7 +296,7 @@ if __name__ == '__main__':
     #             graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
     # # w_msr_by_guang(graph=graph)
     #
-    graph = nx.Graph()
+    graph = nx.DiGraph()
     with open("./data/data.in") as f:
         for line in f.readlines():
             tmp_input = line.strip('\n').split(' ')
@@ -306,7 +306,7 @@ if __name__ == '__main__':
                 graph.add_edge(int(tmp_input[0]), int(tmp_input[num]), state=1)
     lcp_time_varying(graph=graph)
 
-    graph = nx.Graph()
+    graph = nx.DiGraph()
     with open("./data/data.in") as f:
         for line in f.readlines():
             tmp_input = line.strip('\n').split(' ')
