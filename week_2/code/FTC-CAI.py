@@ -63,11 +63,41 @@ def ftc_cai(graph):
     plt.show()
 
 
+def ftc_cai_no_delay(graph):
+    adj_mat = nx.adjacency_matrix(graph)
+    matrix = np.array(adj_mat.todense(), dtype=np.float)
+    # add zero columns and rows to the first column and row.
+    matrix = np.row_stack(([0 for _ in range(matrix.shape[0])], matrix))
+    matrix = np.column_stack(([0 for _ in range(matrix.shape[0])], matrix))
+    print(matrix)
+    for time_step in range(10):
+        for i in range(1, len(graph.nodes()) + 1):
+            neighbors = graph.neighbors(i)
+            sum = 0.0
+            for j in neighbors:
+                sum += abs(matrix[i][j]) * (
+                    graph.node[i]['value'][time_step] - sign(matrix[i][j]) * graph.node[j]['value'][time_step])
+
+            final_result = graph.node[i]['value'][time_step] - sum
+            graph.node[i]['value'].append(final_result)
+
+    for i in graph.nodes():
+        print(graph.node[i]['value'])
+
+    plt.xlabel("time-step")
+    plt.ylabel("values")
+    x_axis = range(11)
+    for i in graph.nodes():
+        print(graph.node[i]['value'])
+        plt.scatter(x_axis, graph.node[i]['value'])
+    plt.savefig('./pngs/Finite-Time-Consensus-No-Delay.png')
+    plt.show()
+
+
 if __name__ == '__main__':
 
     graph = nx.Graph()
-
-    with open("./data/data-balanced.in") as f:
+    with open("./data/data-cn.in") as f:
         for line in f.readlines():
             tmp_input = line.strip('\n').split(' ')
             graph.add_node(int(tmp_input[0]), value=[])
@@ -80,4 +110,19 @@ if __name__ == '__main__':
                 else:
                     graph.edge[int(tmp_input[0])][int(tmp_input[num - 1])]['weight'] = float(tmp_input[num])
                     flag = True
-        ftc_cai(graph=graph)
+    ftc_cai(graph=graph)
+
+    with open("./data/data-cn.in") as f:
+        for line in f.readlines():
+            tmp_input = line.strip('\n').split(' ')
+            graph.add_node(int(tmp_input[0]), value=[])
+            graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
+            flag = True
+            for num in range(2, len(tmp_input)):
+                if flag:
+                    graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
+                    flag = False
+                else:
+                    graph.edge[int(tmp_input[0])][int(tmp_input[num - 1])]['weight'] = float(tmp_input[num])
+                    flag = True
+    ftc_cai_no_delay(graph=graph)
