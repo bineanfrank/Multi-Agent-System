@@ -92,20 +92,20 @@ def ftc_cai_no_delay(graph):
 if __name__ == '__main__':
 
     graph = nx.Graph()
-    with open("./data/data-cn.in") as f:
-        for line in f.readlines():
-            tmp_input = line.strip('\n').split(' ')
-            graph.add_node(int(tmp_input[0]), value=[])
-            graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
-            flag = True
-            for num in range(2, len(tmp_input)):
-                if flag:
-                    graph.add_edge(int(tmp_input[0]), int(tmp_input[num]), weight=0.0)
-                    flag = False
-                else:
-                    graph.edge[int(tmp_input[0])][int(tmp_input[num - 1])]['weight'] = float(tmp_input[num])
-                    flag = True
-    ftc_cai(graph=graph)
+    # with open("./data/data-balanced.in") as f:
+    #     for line in f.readlines():
+    #         tmp_input = line.strip('\n').split(' ')
+    #         graph.add_node(int(tmp_input[0]), value=[])
+    #         graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
+    #         flag = True
+    #         for num in range(2, len(tmp_input)):
+    #             if flag:
+    #                 graph.add_edge(int(tmp_input[0]), int(tmp_input[num]), weight=0.0)
+    #                 flag = False
+    #             else:
+    #                 graph.edge[int(tmp_input[0])][int(tmp_input[num - 1])]['weight'] = float(tmp_input[num])
+    #                 flag = True
+    # ftc_cai(graph=graph)
 
     with open("./data/data-cn.in") as f:
         for line in f.readlines():
