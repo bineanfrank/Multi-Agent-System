@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="72485066-3663-42fa-9bd2-de18c54552fb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/W-MSR.py" afterPath="$PROJECT_DIR$/week_1/code/w_msr.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/FTC-CAI.py" afterPath="$PROJECT_DIR$/week_2/code/ftc_cai.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -729,7 +727,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511148930192</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="修改名字，规范一点">
+      <created>1511149564256</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1511149564257</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -776,7 +781,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加论文中前两个实验" />
     <MESSAGE value="添加week2内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加week2内容" />
+    <MESSAGE value="修改名字，规范一点" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改名字，规范一点" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
