@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72485066-3663-42fa-9bd2-de18c54552fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week_2/code/data/data-balanced1.in" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/week_2/code/data/data-unbalanced2.in" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/code/data/data-in-fig1-a" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-No-Delay.png" afterPath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-No-Delay.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus.png" afterPath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week_1/code/W-MSR.py" afterPath="$PROJECT_DIR$/week_1/code/W-MSR.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week_2/code/FTC-CAI.py" afterPath="$PROJECT_DIR$/week_2/code/FTC-CAI.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-balanced.in" afterPath="$PROJECT_DIR$/week_2/code/data/data-balanced2.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-unbalanced.in" afterPath="$PROJECT_DIR$/week_2/code/data/data-unbalanced1.in" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,11 +35,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FTC-CAI.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FTC-CAI.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week_2/code/FTC-CAI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
               <folding>
                 <element signature="e#95#126#0" expanded="true" />
               </folding>
@@ -56,7 +47,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data-cn.in" pinned="false" current-in-tab="true">
+      <file leaf-file-name="data-cn.in" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week_2/code/data/data-cn.in">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="66">
@@ -611,7 +602,21 @@
       <option name="project" value="LOCAL" />
       <updated>1511098755182</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="添加week2内容">
+      <created>1511146968311</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1511146968311</updated>
+    </task>
+    <task id="LOCAL-00013" summary="添加week2内容">
+      <created>1511146979992</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1511146979992</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -877,21 +882,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week_2/code/FTC-CAI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="184" column="0" lean-forward="true" selection-start-line="184" selection-start-column="0" selection-end-line="184" selection-end-column="0" />
-          <folding>
-            <element signature="e#95#126#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week_2/code/data/data-cn.in">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_2/code/FTC-CAI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="48" column="14" lean-forward="true" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding>
+            <element signature="e#95#126#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
