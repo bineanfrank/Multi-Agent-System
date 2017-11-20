@@ -5,7 +5,7 @@ from scipy.interpolate import spline
 
 
 def maximum_linear_consensus(graph):
-    sigma = 0.1
+    sigma = 0.01
     a = 0.0
     k = 0
 
@@ -16,7 +16,7 @@ def maximum_linear_consensus(graph):
     matrix = np.column_stack(([0 for _ in range(matrix.shape[0])], matrix))
 
     print(matrix)
-    for time_step in range(9):
+    for time_step in range(150):
         for i in range(1, len(graph.nodes()) + 1):
             neighbors = graph.neighbors(i)
 
@@ -45,7 +45,7 @@ def maximum_linear_consensus(graph):
             part_two = sigma * part_two
 
             # result
-            result = graph.node[i]['value'][time_step] + a * (part_one + part_two)
+            result = graph.node[i]['value'][time_step] + 0.1 * a * (part_one + part_two)
             graph.node[i]['value'].append(result)
 
     for i in graph.nodes():
@@ -53,10 +53,10 @@ def maximum_linear_consensus(graph):
 
     plt.xlabel("time-step")
     plt.ylabel("values")
-    x_axis = range(10)
+    x_axis = range(151)
     for i in graph.nodes():
         plt.plot(x_axis, graph.node[i]['value'])
-    plt.savefig('./pngs/maximum_linear_consensus_1.png')
+    plt.savefig('./pngs/maximum_linear_consensus_2.png')
     plt.show()
 
 

@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72485066-3663-42fa-9bd2-de18c54552fb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-unbalanced.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus_beauty.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_1.png" afterPath="$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_2.png" afterPath="$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_2.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/week_2/code/maximum_linear_consensus.py" afterPath="$PROJECT_DIR$/week_2/code/maximum_linear_consensus.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +18,7 @@
     <SUITE FILE_PATH="coverage/Multi_Agent_System$Handler.coverage" NAME="Handler Coverage Results" MODIFIED="1509635054282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_2/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$linear_controller.coverage" NAME="linear_controller Coverage Results" MODIFIED="1510987997189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_2/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$FTC_CAI.coverage" NAME="FTC-CAI Coverage Results" MODIFIED="1511148483207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_2/code" />
-    <SUITE FILE_PATH="coverage/Multi_Agent_System$maximum_linear_consensus.coverage" NAME="maximum_linear_consensus Coverage Results" MODIFIED="1511081050658" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_2/code" />
+    <SUITE FILE_PATH="coverage/Multi_Agent_System$maximum_linear_consensus.coverage" NAME="maximum_linear_consensus Coverage Results" MODIFIED="1511148750848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_2/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$WACS.coverage" NAME="WACS Coverage Results" MODIFIED="1508497965732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$W_MSR.coverage" NAME="W-MSR Coverage Results" MODIFIED="1511093731346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_1/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$test.coverage" NAME="test Coverage Results" MODIFIED="1510733937574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -38,25 +38,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FTC-CAI.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week_2/code/FTC-CAI.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
-              <folding>
-                <element signature="e#95#126#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data-cn.in" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week_2/code/data/data-cn.in">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-              <folding />
-            </state>
+      <file leaf-file-name="maximum_linear_consensus_2.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -98,13 +83,13 @@
         <option value="$PROJECT_DIR$/week_2/code/data/data.in" />
         <option value="$PROJECT_DIR$/week_2/code/linear_controller.py" />
         <option value="$PROJECT_DIR$/week_2/code/data/data-balanced.in" />
-        <option value="$PROJECT_DIR$/week_2/code/maximum_linear_consensus.py" />
         <option value="$PROJECT_DIR$/week_1/code/W-MSR.py" />
         <option value="$PROJECT_DIR$/week_2/code/data/data-cn.in" />
         <option value="$PROJECT_DIR$/week_2/code/data/data-balanced2.in" />
         <option value="$PROJECT_DIR$/week_2/code/data/data-unbalanced1.in" />
         <option value="$PROJECT_DIR$/week_2/code/data/data-balanced1.in" />
         <option value="$PROJECT_DIR$/week_2/code/FTC-CAI.py" />
+        <option value="$PROJECT_DIR$/week_2/code/maximum_linear_consensus.py" />
       </list>
     </option>
   </component>
@@ -271,7 +256,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.FTC-CAI">
+  <component name="RunManager" selected="Python.maximum_linear_consensus">
     <configuration default="false" name="W-MSR" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -524,9 +509,9 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.FTC-CAI" />
-        <item index="1" class="java.lang.String" itemvalue="Python.W-MSR" />
-        <item index="2" class="java.lang.String" itemvalue="Python.maximum_linear_consensus" />
+        <item index="0" class="java.lang.String" itemvalue="Python.maximum_linear_consensus" />
+        <item index="1" class="java.lang.String" itemvalue="Python.FTC-CAI" />
+        <item index="2" class="java.lang.String" itemvalue="Python.W-MSR" />
         <item index="3" class="java.lang.String" itemvalue="Python.linear_controller" />
         <item index="4" class="java.lang.String" itemvalue="Python.test" />
       </list>
@@ -648,7 +633,14 @@
       <option name="project" value="LOCAL" />
       <updated>1511147133387</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="添加week2内容">
+      <created>1511148492480</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1511148492480</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -668,7 +660,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39005524" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39005524" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20628998" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -816,32 +808,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week_2/code/maximum_linear_consensus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1034">
-          <caret line="56" column="27" lean-forward="true" selection-start-line="56" selection-start-column="27" selection-end-line="56" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#31#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus_beauty.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-No-Delay.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
@@ -922,14 +889,37 @@
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-No-Delay.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_2/code/maximum_linear_consensus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/week_2/code/FTC-CAI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="82" column="14" lean-forward="true" selection-start-line="82" selection-start-column="14" selection-end-line="82" selection-end-column="14" />
+        <state relative-caret-position="374">
+          <caret line="98" column="31" lean-forward="true" selection-start-line="98" selection-start-column="31" selection-end-line="98" selection-end-column="31" />
           <folding>
             <element signature="e#95#126#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
