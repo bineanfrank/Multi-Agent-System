@@ -78,6 +78,11 @@ def create_graph(data_path, weighted=False):
 
 
 def get_adj_mat(graph):
+    """
+    get the adjacency matrix
+    :param graph: 
+    :return: 
+    """
     size = len(graph.nodes())
     matrix = np.zeros(shape=(size, size), dtype=np.float)
 
