@@ -1,7 +1,6 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
-from scipy.interpolate import spline
 
 
 def maximum_linear_consensus(graph):
@@ -16,6 +15,7 @@ def maximum_linear_consensus(graph):
     matrix = np.column_stack(([0 for _ in range(matrix.shape[0])], matrix))
 
     print(matrix)
+
     for time_step in range(150):
         for i in range(1, len(graph.nodes()) + 1):
             neighbors = graph.neighbors(i)
