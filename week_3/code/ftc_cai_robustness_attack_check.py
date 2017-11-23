@@ -3,6 +3,7 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
+import random
 
 
 def sign(num):
@@ -75,12 +76,20 @@ def create_graph(data_path, weighted=False):
                 for num in range(2, len(tmp_input)):
                     graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
 
-    # add weight since 'data-balanced-with-7_7-nodes.in' only contains the nodes info.
-    for node in graph.nodes():
-        neighbors = graph.neighbors(node)
-        for neighbor in neighbors:
-            graph.edge[node][neighbor]['weight'] = 1.0 / (len(neighbors) + 1)
-
+    # # add weight since 'data-balanced-with-7_7-nodes.in' only contains the nodes info.
+    # for node in graph.nodes():
+    #     neighbors = graph.neighbors(node)
+    #     for neighbor in neighbors:
+    #         graph.edge[node][neighbor]['weight'] = 1.0 / (len(neighbors) + 1)
+    #
+    # # make it balanced
+    # graph.edge[3][4]['weight'] = -graph.edge[3][4]['weight']
+    # graph.edge[3][14]['weight'] = -graph.edge[3][14]['weight']
+    # graph.edge[13][4]['weight'] = -graph.edge[13][4]['weight']
+    # graph.edge[13][14]['weight'] = -graph.edge[13][14]['weight']
+    # graph.edge[13][9]['weight'] = -graph.edge[13][9]['weight']
+    # graph.edge[10][14]['weight'] = -graph.edge[10][14]['weight']
+    # graph.edge[10][9]['weight'] = -graph.edge[10][9]['weight']
     return graph
 
 
@@ -101,6 +110,12 @@ def get_adj_mat(graph):
 
 
 def drawGraph(fg, name):
+    """
+    (2, 2)-robustness => (2, 1)-robustness => 2-robustness
+    :param fg: 
+    :param name: 
+    :return: 
+    """
     pos = dict()
     pos.setdefault(1, [1, 3])
     pos.setdefault(2, [3, 5])
@@ -117,7 +132,7 @@ def drawGraph(fg, name):
     pos.setdefault(13, [5, 3])
     pos.setdefault(14, [7, 3])
 
-    nx.draw_networkx_nodes(fg, pos, node_size=300)
+    nx.draw_networkx_nodes(fg, pos, node_size=450)
     nx.draw_networkx_edges(fg, pos)
     nx.draw_networkx_labels(fg, pos)
     nx.draw_networkx_edge_labels(fg, pos, edge_labels=nx.get_edge_attributes(fg, 'weight'))
@@ -127,8 +142,8 @@ def drawGraph(fg, name):
 
 def ftc_cai(data_path, fig_name, fig_path, graph_name):
     a = 0.6
-    # graph = create_graph(data_path=data_path, weighted=True)
-    graph = create_graph(data_path=data_path)
+    graph = create_graph(data_path=data_path, weighted=True)
+    # graph = create_graph(data_path=data_path)
     matrix = get_adj_mat(graph=graph)
 
     drawGraph(graph, graph_name)
@@ -156,7 +171,25 @@ def ftc_cai(data_path, fig_name, fig_path, graph_name):
     plt.show()
 
 
-def ftc_cai_f_total(data_path, fig_path, fig_name, malicious_node):
+def attack(cur_value, time_step, attack_mode):
+    if attack_mode == 1:
+        '''
+        F-local attack
+        '''
+        if time_step == 1:
+            '''First sharp change'''
+            return 4
+        else:
+            '''Then, change steadily'''
+            return cur_value + 0.01
+    elif attack_mode == 0:
+        if time_step % 2 == 0:
+            return random.uniform(1, 6)
+        else:
+            return random.uniform(3, 9)
+
+
+def ftc_cai_f_total(data_path, fig_path, fig_name, malicious_node, attack_mode):
     a = 0.6
     graph = create_graph(data_path=data_path, weighted=True)
     matrix = get_adj_mat(graph=graph)
@@ -165,10 +198,8 @@ def ftc_cai_f_total(data_path, fig_path, fig_name, malicious_node):
     for time_step in range(15000):
         for i in range(1, len(graph.nodes()) + 1):
             if i == malicious_node:
-                if time_step == 1:
-                    graph.node[i]['value'].append(4)
-                else:
-                    graph.node[i]['value'].append(graph.node[i]['value'][time_step] + 0.01)
+                graph.node[i]['value'].append(
+                    attack(cur_value=graph.node[i]['value'][time_step], time_step=time_step, attack_mode=attack_mode))
                 continue
 
             neighbors = graph.neighbors(i)
@@ -187,7 +218,8 @@ def ftc_cai_f_total(data_path, fig_path, fig_name, malicious_node):
     x_axis = range(15001)
     for i in graph.nodes():
         plt.plot(x_axis, graph.node[i]['value'])
-    plt.savefig(fig_path + "/" + fig_name + '-Malicious-Node-' + str(malicious_node) + '.png')
+    plt.savefig(
+        fig_path + "/" + fig_name + '-Malicious-Node-' + str(malicious_node) + '-Attack-' + str(attack_mode) + '.png')
     plt.show()
 
 
@@ -197,9 +229,8 @@ if __name__ == '__main__':
             fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", graph_name="-Balanced")
     ftc_cai(data_path="./data/data-unbalanced-with-7_7-nodes.in", fig_path="./pngs",
             fig_name="Finit-Time-Consensus-Unbalanced-With-7_7-Nodes", graph_name="-Unbalanced")
-
     # add F-total attack with F = 1
-    # ftc_cai_f_total(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
-    #                 fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=8)
-    # ftc_cai_f_total(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
-    #                 fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=4)
+    ftc_cai_f_total(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
+                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=14, attack_mode=0)
+    ftc_cai_f_total(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
+                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=14, attack_mode=1)

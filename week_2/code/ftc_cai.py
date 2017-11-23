@@ -148,7 +148,7 @@ def ftc_cai_f_total(data_path, fig_path, fig_name, malicious_node):
     matrix = get_adj_mat(graph=graph)
     print(matrix)
 
-    for time_step in range(1500):
+    for time_step in range(1000):
         for i in range(1, len(graph.nodes()) + 1):
             if i == malicious_node:
                 if time_step == 1:
@@ -170,7 +170,7 @@ def ftc_cai_f_total(data_path, fig_path, fig_name, malicious_node):
 
     plt.xlabel("time-step")
     plt.ylabel("values")
-    x_axis = range(1501)
+    x_axis = range(1001)
     for i in graph.nodes():
         plt.plot(x_axis, graph.node[i]['value'])
     plt.savefig(fig_path + "/" + fig_name + '-Malicious-Node-' + str(malicious_node) + '.png')
