@@ -14,40 +14,6 @@ def sign(num):
         return 0.0
 
 
-def get_neighbor_values(graph, neighbors, time_step, cur_value, F):
-    """
-    get neighbors that F larger or F smaller will be removed.
-    :param graph: 
-    :param neighbors: 
-    :param time_step: 
-    :param cur_value: 
-    :param F: F-total
-    :return: 
-    """
-    neighbor_values = []
-    for i in neighbors:
-        neighbor_values.append(graph.node[i]['value'][time_step])
-    neighbor_values.sort()
-
-    index_front = 0
-    while index_front < F:
-        if neighbor_values[index_front] < cur_value:
-            index_front += 1
-        else:
-            break
-
-    index = 0
-    index_end = len(neighbor_values) - 1
-    while index < F:
-        if neighbor_values[index_end] > cur_value:
-            index_end -= 1
-            index += 1
-        else:
-            break
-
-    return neighbor_values[index_front:index_end + 1]
-
-
 def create_graph(data_path, weighted=False):
     """
     create a graph and return

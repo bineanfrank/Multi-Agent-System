@@ -15,24 +15,32 @@ def sign(num):
         return 0.0
 
 
-def get_neighbor_values(graph, neighbors, time_step, cur_value, F):
+def get_limited_neighbors(graph, neighbors, time_step, cur_value, F):
     """
-    get neighbors that F larger or F smaller will be removed.
+    get neighbors, F larger or F smaller will be removed.
     :param graph: 
     :param neighbors: 
     :param time_step: 
     :param cur_value: 
-    :param F: F-total
+    :param F: F-local
     :return: 
     """
+
+    # key value pairs
     neighbor_values = []
+
     for i in neighbors:
-        neighbor_values.append(graph.node[i]['value'][time_step])
-    neighbor_values.sort()
+        neighbor_values.append({'node': i, 'value': graph.node[i]['value'][time_step]})
+
+    # print(neighbor_values)
+
+    neighbor_values = sorted(neighbor_values, key=lambda node: node['value'])
+
+    # print(neighbor_values)
 
     index_front = 0
     while index_front < F:
-        if neighbor_values[index_front] < cur_value:
+        if neighbor_values[index_front]['value'] < cur_value:
             index_front += 1
         else:
             break
@@ -40,13 +48,17 @@ def get_neighbor_values(graph, neighbors, time_step, cur_value, F):
     index = 0
     index_end = len(neighbor_values) - 1
     while index < F:
-        if neighbor_values[index_end] > cur_value:
+        if neighbor_values[index_end]['value'] > cur_value:
             index_end -= 1
             index += 1
         else:
             break
 
-    return neighbor_values[index_front:index_end + 1]
+    final_neighbors = []
+    for item in neighbor_values[index_front:index_end + 1]:
+        final_neighbors.append(item['node'])
+
+    return final_neighbors
 
 
 def create_graph(data_path, weighted=False):
@@ -135,7 +147,7 @@ def drawGraph(fg, name):
     nx.draw_networkx_nodes(fg, pos, node_size=450)
     nx.draw_networkx_edges(fg, pos)
     nx.draw_networkx_labels(fg, pos)
-    nx.draw_networkx_edge_labels(fg, pos, edge_labels=nx.get_edge_attributes(fg, 'weight'))
+    nx.draw_networkx_edge_labels(fg, pos, edge_labels=nx.get_edge_attributes(fg, 'weight'), label_pos=0.3)
     plt.savefig("./pngs/Graph" + name + ".png")
     plt.show()
 
@@ -178,31 +190,31 @@ def attack(cur_value, time_step, attack_mode):
         '''
         if time_step == 1:
             '''First sharp change'''
-            return 4
+            return 1
         else:
             '''Then, change steadily'''
             return cur_value + 0.01
-    elif attack_mode == 0:
+    else:
         if time_step % 2 == 0:
-            return random.uniform(1, 6)
+            return random.uniform(17, 18)
         else:
-            return random.uniform(3, 9)
+            return random.uniform(12, 13)
 
 
-def ftc_cai_f_total(data_path, fig_path, fig_name, malicious_node, attack_mode):
+def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
     a = 0.6
     graph = create_graph(data_path=data_path, weighted=True)
     matrix = get_adj_mat(graph=graph)
     print(matrix)
 
-    for time_step in range(15000):
+    for time_step in range(5500):
         for i in range(1, len(graph.nodes()) + 1):
             if i == malicious_node:
                 graph.node[i]['value'].append(
                     attack(cur_value=graph.node[i]['value'][time_step], time_step=time_step, attack_mode=attack_mode))
                 continue
-
-            neighbors = graph.neighbors(i)
+            neighbors = get_limited_neighbors(graph=graph, neighbors=graph.neighbors(i), time_step=time_step,
+                                              cur_value=graph.node[i]['value'][time_step], F=1)
             sum = 0.0
             for j in neighbors:
                 sum += (matrix[i - 1][j - 1] * (
@@ -215,7 +227,7 @@ def ftc_cai_f_total(data_path, fig_path, fig_name, malicious_node, attack_mode):
 
     plt.xlabel("time-step")
     plt.ylabel("values")
-    x_axis = range(15001)
+    x_axis = range(5501)
     for i in graph.nodes():
         plt.plot(x_axis, graph.node[i]['value'])
     plt.savefig(
@@ -229,8 +241,9 @@ if __name__ == '__main__':
             fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", graph_name="-Balanced")
     ftc_cai(data_path="./data/data-unbalanced-with-7_7-nodes.in", fig_path="./pngs",
             fig_name="Finit-Time-Consensus-Unbalanced-With-7_7-Nodes", graph_name="-Unbalanced")
-    # add F-total attack with F = 1
-    ftc_cai_f_total(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=14, attack_mode=0)
-    ftc_cai_f_total(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=14, attack_mode=1)
+
+    # add F-local attack with F = 1
+    ftc_cai_f_local(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
+                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=5, attack_mode=0)
+    # ftc_cai_f_local(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
+    #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=14, attack_mode=1)
