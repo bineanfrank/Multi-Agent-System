@@ -1,9 +1,11 @@
 # Finite-Time Consensus for Multiagent Systems With Cooperative and Antagonistic Interactions
-
+import math
 import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 import random
+import utils
+import utils.util
 
 
 def sign(num):
@@ -178,7 +180,7 @@ def ftc_cai(data_path, fig_name, fig_path, graph_name):
     plt.ylabel("values")
     x_axis = range(1001)
     for i in graph.nodes():
-        plt.plot(x_axis, graph.node[i]['value'])
+        plt.plot(x_axis, graph.node[i]['value'], label='node ' + str(i), color=utils.util.colors[i])
     plt.savefig(fig_path + "/" + fig_name + '.png')
     plt.show()
 
@@ -188,17 +190,18 @@ def attack(cur_value, time_step, attack_mode):
         '''
         F-local attack
         '''
-        if time_step == 5:
+        if time_step == 1:
             '''First sharp change'''
-            return 9
+            return 5
         else:
             '''Then, change steadily'''
-            return cur_value - 0.01
+            return cur_value + 0.01
     else:
-        if time_step % 2 == 0:
-            return random.uniform(16, 18)
-        else:
-            return random.uniform(8, 9)
+        # if time_step % 2 == 0:
+        #     return random.uniform(16, 18)
+        # else:
+        #     return random.uniform(8, 9)
+        return 5 + math.sin(time_step * 0.05)
 
 
 def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
@@ -207,7 +210,7 @@ def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
     matrix = get_adj_mat(graph=graph)
     print(matrix)
 
-    for time_step in range(6000):
+    for time_step in range(30000):
         for i in range(1, len(graph.nodes()) + 1):
             if i == malicious_node:
                 graph.node[i]['value'].append(
@@ -219,17 +222,19 @@ def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
             for j in neighbors:
                 sum += (matrix[i - 1][j - 1] * (
                     graph.node[j]['value'][time_step] - sign(matrix[i - 1][j - 1]) * graph.node[i]['value'][time_step]))
-            final_result = graph.node[i]['value'][time_step] + 0.01 * sign(sum) * (abs(sum) ** a)
+            final_result = graph.node[i]['value'][time_step] + 0.001 * sign(sum) * (abs(sum) ** a)
             graph.node[i]['value'].append(final_result)
 
-    for i in graph.nodes():
-        print(graph.node[i]['value'])
+    # for i in graph.nodes():
+    #     print(graph.node[i]['value'])
 
     plt.xlabel("time-step")
     plt.ylabel("values")
-    x_axis = range(6001)
+    x_axis = range(30001)
     for i in graph.nodes():
-        plt.plot(x_axis, graph.node[i]['value'])
+        plt.plot(x_axis, graph.node[i]['value'], label='node ' + str(i))
+    # plt.legend(loc='bottom right', bbox_to_anchor=(0.1, 1.05), ncol=5)
+    plt.legend(loc='best', ncol=5)
     plt.savefig(
         fig_path + "/" + fig_name + '-Malicious-Node-' + str(malicious_node) + '-Attack-' + str(attack_mode) + '.png')
     plt.show()
@@ -243,7 +248,9 @@ if __name__ == '__main__':
     #         fig_name="Finit-Time-Consensus-Unbalanced-With-7_7-Nodes", graph_name="-Unbalanced")
 
     # add F-local attack with F = 1
+
+    # for i in range(1, 15):
     ftc_cai_f_local(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=14, attack_mode=0)
+                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=2, attack_mode=0)
     ftc_cai_f_local(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=14, attack_mode=1)
+                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=2, attack_mode=1)
