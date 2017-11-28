@@ -4,8 +4,6 @@ import matplotlib.pyplot as plt
 import networkx as nx
 import numpy as np
 import random
-import utils
-import utils.util
 
 
 def sign(num):
@@ -180,7 +178,7 @@ def ftc_cai(data_path, fig_name, fig_path, graph_name):
     plt.ylabel("values")
     x_axis = range(1001)
     for i in graph.nodes():
-        plt.plot(x_axis, graph.node[i]['value'], label='node ' + str(i), color=utils.util.colors[i])
+        plt.plot(x_axis, graph.node[i]['value'])
     plt.savefig(fig_path + "/" + fig_name + '.png')
     plt.show()
 
@@ -195,13 +193,16 @@ def attack(cur_value, time_step, attack_mode):
             return 5
         else:
             '''Then, change steadily'''
+            if cur_value > 10:
+                return 7
             return cur_value + 0.01
+    elif attack_mode == 0:
+        if time_step % 2 == 0:
+            return random.uniform(16, 18)
+        else:
+            return random.uniform(8, 9)
     else:
-        # if time_step % 2 == 0:
-        #     return random.uniform(16, 18)
-        # else:
-        #     return random.uniform(8, 9)
-        return 5 + math.sin(time_step * 0.05)
+        return 5 + math.sin(time_step * 0.005)
 
 
 def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
@@ -242,15 +243,18 @@ def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
 
 if __name__ == '__main__':
     # Balanced and unbalanced cases
-    # ftc_cai(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
-    #         fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", graph_name="-Balanced")
-    # ftc_cai(data_path="./data/data-unbalanced-with-7_7-nodes.in", fig_path="./pngs",
-    #         fig_name="Finit-Time-Consensus-Unbalanced-With-7_7-Nodes", graph_name="-Unbalanced")
+    ftc_cai(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
+            fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", graph_name="-Balanced")
+    ftc_cai(data_path="./data/data-unbalanced-with-7_7-nodes.in", fig_path="./pngs",
+            fig_name="Finit-Time-Consensus-Unbalanced-With-7_7-Nodes", graph_name="-Unbalanced")
 
     # add F-local attack with F = 1
 
     # for i in range(1, 15):
+    i = 2
     ftc_cai_f_local(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=2, attack_mode=0)
+                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=0)
     ftc_cai_f_local(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=2, attack_mode=1)
+                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=1)
+    ftc_cai_f_local(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
+                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=2)
