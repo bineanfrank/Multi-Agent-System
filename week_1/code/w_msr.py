@@ -297,7 +297,7 @@ if __name__ == '__main__':
     # # w_msr_by_guang(graph=graph)
     #
     graph = nx.DiGraph()
-    with open("./data/data-balanced-with-7_7-nodes.in") as f:
+    with open("./data/data-connected-with-7_7-nodes.in") as f:
         for line in f.readlines():
             tmp_input = line.strip('\n').split(' ')
             graph.add_node(int(tmp_input[0]), value=[])
@@ -307,7 +307,7 @@ if __name__ == '__main__':
     lcp_time_varying(graph=graph)
 
     graph = nx.DiGraph()
-    with open("./data/data-balanced-with-7_7-nodes.in") as f:
+    with open("./data/data-connected-with-7_7-nodes.in") as f:
         for line in f.readlines():
             tmp_input = line.strip('\n').split(' ')
             graph.add_node(int(tmp_input[0]), value=[])
