@@ -108,7 +108,7 @@ def w_msr(graph):
     x_axis = range(201)
     handle1 = 1
     handle2 = 2
-    for i in range(1, 9):
+    for i in range(1, 15):
         if i == 14:
             handle1, = plt.plot(x_axis, graph.node[i]['value'], 'g--')
         else:
@@ -251,53 +251,39 @@ def w_msr_prop_1(graph):
 
 
 if __name__ == '__main__':
-    # graph = nx.Graph()
-    # with open("./data/data-balanced2.in") as f:
-    #     for line in f.readlines():
-    #         tmp_input = line.strip('\n').split(' ')
-    #         graph.add_node(int(tmp_input[0]), value=[])
-    #         graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
-    #         for num in range(2, len(tmp_input)):
-    #             graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
-    # lcp(graph=graph)
+    graph = nx.Graph()
+    with open("./data/data.in") as f:
+        for line in f.readlines():
+            tmp_input = line.strip('\n').split(' ')
+            graph.add_node(int(tmp_input[0]), value=[])
+            graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
+            for num in range(2, len(tmp_input)):
+                graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
+    lcp(graph=graph)
 
-    # graph = nx.Graph()
-    # with open("./data/data-balanced2.in") as f:
-    #     for line in f.readlines():
-    #         tmp_input = line.strip('\n').split(' ')
-    #         graph.add_node(int(tmp_input[0]), value=[])
-    #         graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
-    #         for num in range(2, len(tmp_input)):
-    #             graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
-    # lcp_by_guang(graph=graph)
+    graph = nx.Graph()
+    with open("./data/data.in") as f:
+        for line in f.readlines():
+            tmp_input = line.strip('\n').split(' ')
+            graph.add_node(int(tmp_input[0]), value=[])
+            graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
+            for num in range(2, len(tmp_input)):
+                graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
+    w_msr(graph=graph)
 
-    # graph = nx.Graph()
-    # with open("./data/data_prop_1.in") as f:
-    #     for line in f.readlines():
-    #         tmp_input = line.strip('\n').split(' ')
-    #         graph.add_node(int(tmp_input[0]), value=[])
-    #         graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
-    #         for num in range(2, len(tmp_input)):
-    #             graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
-    #
-    # nx.draw(graph, with_labels=True)
-    # plt.savefig("./pngs/prop1.png")
-    # plt.draw()
-    # plt.show()
-    # w_msr_prop_1(graph=graph)
+    graph = nx.Graph()
+    with open("./data/data_prop_1.in") as f:
+        for line in f.readlines():
+            tmp_input = line.strip('\n').split(' ')
+            graph.add_node(int(tmp_input[0]), value=[])
+            graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
+            for num in range(2, len(tmp_input)):
+                graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
+    w_msr_prop_1(graph=graph)
 
-    # graph = nx.Graph()
-    # with open("./data/data-balanced2.in") as f:
-    #     for line in f.readlines():
-    #         tmp_input = line.strip('\n').split(' ')
-    #         graph.add_node(int(tmp_input[0]), value=[])
-    #         graph.node[int(tmp_input[0])]['value'].append(float(tmp_input[1]))
-    #         for num in range(2, len(tmp_input)):
-    #             graph.add_edge(int(tmp_input[0]), int(tmp_input[num]))
-    # # w_msr_by_guang(graph=graph)
-    #
+    
     graph = nx.DiGraph()
-    with open("./data/data-connected-with-7_7-nodes.in") as f:
+    with open("./data/data.in") as f:
         for line in f.readlines():
             tmp_input = line.strip('\n').split(' ')
             graph.add_node(int(tmp_input[0]), value=[])
@@ -307,7 +293,7 @@ if __name__ == '__main__':
     lcp_time_varying(graph=graph)
 
     graph = nx.DiGraph()
-    with open("./data/data-connected-with-7_7-nodes.in") as f:
+    with open("./data/data.in") as f:
         for line in f.readlines():
             tmp_input = line.strip('\n').split(' ')
             graph.add_node(int(tmp_input[0]), value=[])
