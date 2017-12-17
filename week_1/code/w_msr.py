@@ -91,7 +91,7 @@ def w_msr(graph):
                 if time_step == 1:
                     graph.node[i]['value'].append(0)
                 else:
-                    graph.node[i]['value'].append(graph.node[i]['value'][time_step] + 0.02)
+                    graph.node[i]['value'].append(graph.node[i]['value'][time_step] + 0.01)
                 continue
             neighbors = graph.neighbors(i)
             cur_value = graph.node[i]['value'][time_step]

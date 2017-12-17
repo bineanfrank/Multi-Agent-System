@@ -109,7 +109,7 @@ def is_square(n):
 def simulate():
     initialize()
     # value of u
-    u = 0.01
+    u = 0.1
     global graph
     global current_graph
     graph = get_graph(to_graph=3)

@@ -36,7 +36,7 @@ def initialize():
     node_values = np.array([-1.5, 1.0, 0.])
 
     global graph
-    graph = nx.DiGraph()
+    graph = nx.Graph()
 
     # three status of graph
     global A4

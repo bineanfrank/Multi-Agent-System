@@ -143,7 +143,6 @@ def drawGraph(fg, name):
     pos.setdefault(12, [3, 3])
     pos.setdefault(13, [5, 3])
     pos.setdefault(14, [7, 3])
-
     nx.draw_networkx_nodes(fg, pos, node_size=450)
     nx.draw_networkx_edges(fg, pos)
     nx.draw_networkx_labels(fg, pos)
@@ -241,18 +240,18 @@ def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
 
 if __name__ == '__main__':
     # Balanced and unbalanced cases
-    # ftc_cai(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
-    #         fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", graph_name="-Balanced")
-    # ftc_cai(data_path="./data/data-unbalanced-with-7_7-nodes.in", fig_path="./pngs",
-    #         fig_name="Finit-Time-Consensus-Unbalanced-With-7_7-Nodes", graph_name="-Unbalanced")
+    ftc_cai(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
+            fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", graph_name="-Balanced")
+    ftc_cai(data_path="./data/data-unbalanced-with-7_7-nodes.in", fig_path="./pngs",
+            fig_name="Finit-Time-Consensus-Unbalanced-With-7_7-Nodes", graph_name="-Unbalanced")
 
     # add F-local attack with F = 1
 
     # for i in range(1, 15):
-    i = 8
-    ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=0)
-    ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=1)
-    ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=2)
+    # i = 8
+    # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
+    #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=0)
+    # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
+    #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=1)
+    # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
+    #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=2)

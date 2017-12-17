@@ -170,13 +170,13 @@ def ftc_cai_no_delay(graph):
 
 if __name__ == '__main__':
     # Balanced and unbalanced cases
-    # ftc_cai(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
-    #         fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", graph_name="-Balanced")
-    # ftc_cai(data_path="./data/data-unbalanced-with-4_4-nodes.in", fig_path="./pngs",
-    #         fig_name="Finit-Time-Consensus-Unbalanced-With-4_4-Nodes", graph_name="-Unbalanced")
+    ftc_cai(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
+            fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", graph_name="-Balanced")
+    ftc_cai(data_path="./data/data-unbalanced-with-4_4-nodes.in", fig_path="./pngs",
+            fig_name="Finit-Time-Consensus-Unbalanced-With-4_4-Nodes", graph_name="-Unbalanced")
 
     # add F-total attack with F = 1
-    ftc_cai_f_total(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=8)
-    ftc_cai_f_total(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=4)
+    # ftc_cai_f_total(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
+    #                 fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=8)
+    # ftc_cai_f_total(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
+    #                 fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=4)
