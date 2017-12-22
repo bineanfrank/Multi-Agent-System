@@ -189,10 +189,10 @@ def attack(cur_value, time_step, attack_mode):
         '''
         if time_step == 1:
             '''First sharp change'''
-            return 5
+            return 4
         else:
             '''Then, change steadily'''
-            return cur_value + 0.01
+            return cur_value + 0.001
     elif attack_mode == 0:
         if time_step % 2 == 0:
             return random.uniform(26, 27)
@@ -208,7 +208,7 @@ def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
     matrix = get_adj_mat(graph=graph)
     print(matrix)
 
-    for time_step in range(150000):
+    for time_step in range(15000):
         for i in range(1, len(graph.nodes()) + 1):
             if i == malicious_node:
                 graph.node[i]['value'].append(
@@ -228,11 +228,11 @@ def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
 
     plt.xlabel("time-step")
     plt.ylabel("values")
-    x_axis = range(150001)
+    x_axis = range(15001)
     for i in graph.nodes():
         plt.plot(x_axis, graph.node[i]['value'], label='node ' + str(i))
     # plt.legend(loc='bottom right', bbox_to_anchor=(0.1, 1.05), ncol=5)
-    plt.legend(loc='best', ncol=5)
+    # plt.legend(loc='best', ncol=5)
     plt.savefig(
         fig_path + "/" + fig_name + '-Malicious-Node-' + str(malicious_node) + '-Attack-' + str(attack_mode) + '.png')
     plt.show()
@@ -247,10 +247,9 @@ if __name__ == '__main__':
 
     # add F-local attack with F = 1
 
-    # for i in range(1, 15):
-    # i = 8
-    # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
-    #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=0)
+
+    ftc_cai_f_local(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
+                    fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=4, attack_mode=1)
     # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
     #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=1)
     # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
