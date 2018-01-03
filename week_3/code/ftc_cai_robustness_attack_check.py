@@ -130,19 +130,19 @@ def drawGraph(fg, name):
     """
     pos = dict()
     pos.setdefault(1, [1, 3])
-    pos.setdefault(2, [3, 5])
-    pos.setdefault(3, [5, 5])
-    pos.setdefault(4, [7, 5])
-    pos.setdefault(5, [11, 5])
-    pos.setdefault(6, [13, 3])
-    pos.setdefault(7, [9, 3])
-    pos.setdefault(8, [11, 1])
-    pos.setdefault(9, [7, 1])
-    pos.setdefault(10, [5, 1])
-    pos.setdefault(11, [3, 1])
-    pos.setdefault(12, [3, 3])
-    pos.setdefault(13, [5, 3])
-    pos.setdefault(14, [7, 3])
+    pos.setdefault(2, [5, 5])
+    pos.setdefault(3, [9, 5])
+    pos.setdefault(4, [13, 5])
+    pos.setdefault(5, [18, 5])
+    pos.setdefault(6, [20, 3])
+    pos.setdefault(7, [16, 3])
+    pos.setdefault(8, [18, 1])
+    pos.setdefault(9, [13, 1])
+    pos.setdefault(10, [9, 1])
+    pos.setdefault(11, [5, 1])
+    pos.setdefault(12, [5, 3])
+    pos.setdefault(13, [9, 3])
+    pos.setdefault(14, [13, 3])
     nx.draw_networkx_nodes(fg, pos, node_size=450)
     nx.draw_networkx_edges(fg, pos)
     nx.draw_networkx_labels(fg, pos)
@@ -210,10 +210,10 @@ def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
 
     for time_step in range(15000):
         for i in range(1, len(graph.nodes()) + 1):
-            if i == malicious_node:
-                graph.node[i]['value'].append(
-                    attack(cur_value=graph.node[i]['value'][time_step], time_step=time_step, attack_mode=attack_mode))
-                continue
+            # if i == malicious_node:
+            #     graph.node[i]['value'].append(
+            #         attack(cur_value=graph.node[i]['value'][time_step], time_step=time_step, attack_mode=attack_mode))
+            #     continue
             neighbors = get_limited_neighbors(graph=graph, neighbors=graph.neighbors(i), time_step=time_step,
                                               cur_value=graph.node[i]['value'][time_step], F=1)
             sum = 0.0
@@ -248,8 +248,8 @@ if __name__ == '__main__':
     # add F-local attack with F = 1
 
 
-    ftc_cai_f_local(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
-                    fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=4, attack_mode=1)
+    # ftc_cai_f_local(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
+    #                 fig_name="Finit-Time-Consensus-Balanced-With-4_4-Nodes", malicious_node=4, attack_mode=1)
     # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
     #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=1)
     # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
