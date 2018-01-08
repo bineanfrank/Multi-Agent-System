@@ -82,7 +82,7 @@ def create_graph(data_path, weighted=False):
                         graph.add_edge(int(tmp_input[0]), int(tmp_input[num]), weight=0.0)
                         flag = False
                     else:
-                        graph.edge[int(tmp_input[0])][int(tmp_input[num - 1])]['weight'] = float(tmp_input[num])
+                        graph.add_edge(int(tmp_input[0]), int(tmp_input[num - 1]), weight=float(tmp_input[num]))
                         flag = True
             else:
                 for num in range(2, len(tmp_input)):
