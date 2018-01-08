@@ -1,125 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="72485066-3663-42fa-9bd2-de18c54552fb" name="Default" comment="添加假的第五周的内容">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_1/paper/2013 Resilient AsymptoticConsensus in Robust Networks.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_1/paper/Resilient Asymptotic Consensus in Robust Networks.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_1/paper/Resilient Asymptotic Consensus in Robust Networks.pptx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/paper/Signed graph consensus/2013 Consensus Problems on Networks With Antagonistic Interactions.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/paper/Signed graph consensus/2016 With Cooperative and Antagonistic Interactions.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/paper/Signed graph consensus/chap4 Signed Graphs.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/paper/复杂多智能体系统的最大一致性_王付永.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_2/paper/符号网络研究综述.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_3/paper/signed graphs/chap4 Signed Graphs.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_4/paper/Behaviors of networks with antagonistic interactions and switching topologies.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_4/paper/Consensus and polarization in Altafini’s model with bidirectional time-varying network topologies.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/week_4/paper/Modulus Consensus over Time-varying Digraphs.pdf" afterPath="" />
+    <list default="true" id="72485066-3663-42fa-9bd2-de18c54552fb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/data/data.in" afterPath="$PROJECT_DIR$/week_1/data/data.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/data/data_prop_1.in" afterPath="$PROJECT_DIR$/week_1/data/data_prop_1.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/pngs/Linear-Consensus-Algorithm-By-Guang.png" afterPath="$PROJECT_DIR$/week_1/pngs/Linear-Consensus-Algorithm-By-Guang.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/pngs/Linear-Consensus-Algorithm-Time-Varying.png" afterPath="$PROJECT_DIR$/week_1/pngs/Linear-Consensus-Algorithm-Time-Varying.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/pngs/Linear-Consensus-Algorithm.png" afterPath="$PROJECT_DIR$/week_1/pngs/Linear-Consensus-Algorithm.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/pngs/Weighted-Mean-Subsequence-Reduced-Prop1.png" afterPath="$PROJECT_DIR$/week_1/pngs/Weighted-Mean-Subsequence-Reduced-Prop1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/pngs/Weighted-Mean-Subsequence-Reduced-Time-Varying.png" afterPath="$PROJECT_DIR$/week_1/pngs/Weighted-Mean-Subsequence-Reduced-Time-Varying.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/pngs/Weighted-Mean-Subsequence-Reduced.png" afterPath="$PROJECT_DIR$/week_1/pngs/Weighted-Mean-Subsequence-Reduced.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/pngs/prop1.png" afterPath="$PROJECT_DIR$/week_1/pngs/prop1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_1/code/w_msr.py" afterPath="$PROJECT_DIR$/week_1/w_msr.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-balanced-with-4_4-nodes.in" afterPath="$PROJECT_DIR$/week_2/data/data-balanced-with-4_4-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-balanced1.in" afterPath="$PROJECT_DIR$/week_2/data/data-balanced1.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-balanced2.in" afterPath="$PROJECT_DIR$/week_2/data/data-balanced2.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-cn.in" afterPath="$PROJECT_DIR$/week_2/data/data-cn.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-unbalanced-with-4_4-nodes.in" afterPath="$PROJECT_DIR$/week_2/data/data-unbalanced-with-4_4-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-unbalanced1.in" afterPath="$PROJECT_DIR$/week_2/data/data-unbalanced1.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data-unbalanced2.in" afterPath="$PROJECT_DIR$/week_2/data/data-unbalanced2.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/data/data.in" afterPath="$PROJECT_DIR$/week_2/data/data.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/ftc_cai.py" afterPath="$PROJECT_DIR$/week_2/ftc_cai.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/maximum_linear_consensus.py" afterPath="$PROJECT_DIR$/week_2/maximum_linear_consensus.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-4.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-8.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-8.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finit-Time-Consensus-Unbalanced-With-4_4-Nodes.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finit-Time-Consensus-Unbalanced-With-4_4-Nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-Balanced_1.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finite-Time-Consensus-Balanced_1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-Balanced_1_F_Total.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finite-Time-Consensus-Balanced_1_F_Total.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-Balanced_2.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finite-Time-Consensus-Balanced_2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-Balanced_2_F_Total.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finite-Time-Consensus-Balanced_2_F_Total.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-No-Delay.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finite-Time-Consensus-No-Delay.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-Unbalanced_1.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finite-Time-Consensus-Unbalanced_1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-Unbalanced_2.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finite-Time-Consensus-Unbalanced_2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Finite-Time-Consensus-balanced.png" afterPath="$PROJECT_DIR$/week_2/pngs/Finite-Time-Consensus-balanced.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Graph-Balanced.png" afterPath="$PROJECT_DIR$/week_2/pngs/Graph-Balanced.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/Graph-Unbalanced.png" afterPath="$PROJECT_DIR$/week_2/pngs/Graph-Unbalanced.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_1.png" afterPath="$PROJECT_DIR$/week_2/pngs/maximum_linear_consensus_1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_2/code/pngs/maximum_linear_consensus_2.png" afterPath="$PROJECT_DIR$/week_2/pngs/maximum_linear_consensus_2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/data/data-balanced-with-4_4-nodes.in" afterPath="$PROJECT_DIR$/week_3/data/data-balanced-with-4_4-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/data/data-balanced-with-7_7-nodes.in" afterPath="$PROJECT_DIR$/week_3/data/data-balanced-with-7_7-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/data/data-unbalanced-with-7_7-nodes.in" afterPath="$PROJECT_DIR$/week_3/data/data-unbalanced-with-7_7-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/ftc_cai_robustness_attack_check.py" afterPath="$PROJECT_DIR$/week_3/ftc_cai_robustness_attack_check.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-4-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-4-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-4-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-4-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-4-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-4_4-Nodes-Malicious-Node-4-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-1-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-1-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-1-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-1-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-10-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-10-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-10-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-10-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-11-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-11-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-11-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-11-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-12-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-12-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-12-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-12-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-13-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-13-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-13-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-13-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-14-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-14-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-14-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-14-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-14-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-14-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-3-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-3-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-3-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-3-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-3-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-3-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-4-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-4-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-4-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-4-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-4-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-4-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-5-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-5-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-5-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-5-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-5-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-5-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-6-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-6-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-6-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-6-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-6-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-6-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-7-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-7-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-7-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-7-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-7-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-7-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-8-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-8-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-8-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-8-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-8-Attack-2.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-8-Attack-2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-9-Attack-0.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-9-Attack-0.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-9-Attack-1.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-9-Attack-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Finit-Time-Consensus-Unbalanced-With-7_7-Nodes.png" afterPath="$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Unbalanced-With-7_7-Nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Graph-Balanced.png" afterPath="$PROJECT_DIR$/week_3/pngs/Graph-Balanced.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_3/code/pngs/Graph-Unbalanced.png" afterPath="$PROJECT_DIR$/week_3/pngs/Graph-Unbalanced.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/counter_example.py" afterPath="$PROJECT_DIR$/week_4/counter_example.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/data/data.in" afterPath="$PROJECT_DIR$/week_4/data/data.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/numerical_example_bidirectional.py" afterPath="$PROJECT_DIR$/week_4/numerical_example_bidirectional.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/numerical_example_unidirectional.py" afterPath="$PROJECT_DIR$/week_4/numerical_example_unidirectional.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/pngs/Weighted-Mean-Subsequence-Reduced.png" afterPath="$PROJECT_DIR$/week_4/pngs/Weighted-Mean-Subsequence-Reduced.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/pngs/counter_example.png" afterPath="$PROJECT_DIR$/week_4/pngs/counter_example.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/pngs/dynamics_bidirectional.png" afterPath="$PROJECT_DIR$/week_4/pngs/dynamics_bidirectional.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/pngs/dynamics_unidirectional.png" afterPath="$PROJECT_DIR$/week_4/pngs/dynamics_unidirectional.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_4/code/w_msr_undirected_graph.py" afterPath="$PROJECT_DIR$/week_4/w_msr_undirected_graph.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/counter_example.py" afterPath="$PROJECT_DIR$/week_5/counter_example.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/data/data-balanced-with-4_4-nodes.in" afterPath="$PROJECT_DIR$/week_5/data/data-balanced-with-4_4-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/data/data-balanced-with-7_7-nodes.in" afterPath="$PROJECT_DIR$/week_5/data/data-balanced-with-7_7-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/data/data-unbalanced-with-3_3-nodes.in" afterPath="$PROJECT_DIR$/week_5/data/data-unbalanced-with-3_3-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/data/data-unbalanced-with-7_7-nodes.in" afterPath="$PROJECT_DIR$/week_5/data/data-unbalanced-with-7_7-nodes.in" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/modulus_consensus.py" afterPath="$PROJECT_DIR$/week_5/modulus_consensus.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/pngs/graph_balanced_4_4_nodes.png" afterPath="$PROJECT_DIR$/week_5/pngs/graph_balanced_4_4_nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/pngs/graph_balanced_7_7_nodes.png" afterPath="$PROJECT_DIR$/week_5/pngs/graph_balanced_7_7_nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/pngs/graph_unbalanced_7_7_nodes.png" afterPath="$PROJECT_DIR$/week_5/pngs/graph_unbalanced_7_7_nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/pngs/modulus_consensus_balanced_4_4_nodes.png" afterPath="$PROJECT_DIR$/week_5/pngs/modulus_consensus_balanced_4_4_nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/pngs/modulus_consensus_balanced_7_7_nodes.png" afterPath="$PROJECT_DIR$/week_5/pngs/modulus_consensus_balanced_7_7_nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/pngs/modulus_consensus_unbalanced_7_7_nodes.png" afterPath="$PROJECT_DIR$/week_5/pngs/modulus_consensus_unbalanced_7_7_nodes.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/week_5/code/pngs/modulus_consensus_unbalanced_7_7_nodes_malicious_node_4_attack_1.png" afterPath="$PROJECT_DIR$/week_5/pngs/modulus_consensus_unbalanced_7_7_nodes_malicious_node_4_attack_1.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -963,7 +846,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514966501101</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="添加假的第五周的内容">
+      <created>1515382797711</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1515382797711</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TodoView">
@@ -978,11 +868,11 @@
   <component name="ToolWindowManager">
     <frame x="1912" y="31" width="1696" height="1036" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29278728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29278728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852387" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281768" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.328" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38057142" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
