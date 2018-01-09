@@ -2,16 +2,6 @@
 import matplotlib.pyplot as plt
 import networkx as nx
 
-
-def sign(num):
-    if num < 0:
-        return -1.0
-    elif num > 0:
-        return 1.0
-    else:
-        return 0.0
-
-
 # for fix topology
 global graph
 global D
@@ -43,7 +33,7 @@ def fix_topology():
     X = [[7], [-10], [-3], [2], [-8], [15], [10], [12]]
     y = 0.45
 
-    '''start interation'''
+    '''start interaction'''
     for time_step in range(20):
         for i in range(len(X)):
             current_value = X[i][time_step]
@@ -139,7 +129,6 @@ def switching_topology():
             delta = 0
             for neighbor in in_neighbors:
                 delta += (D[neighbor - 1] * X[neighbor - 1][time_step] - D[i] * current_value)
-
             next_value = X[i][time_step] + current_y * delta * D[i]
             X[i].append(next_value)
     plt.xlabel("time-step")
