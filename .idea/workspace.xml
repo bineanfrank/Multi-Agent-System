@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72485066-3663-42fa-9bd2-de18c54552fb" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/data/data.in" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/fixed_signed_consensus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/fixed_topology.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/original_fixed_signed_consensus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/original_switching_signed_consensus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/switching_signed_consensus.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/switching_system.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/switching_topology.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/signed_consensus.py" />
       <change beforePath="$PROJECT_DIR$/.idea/Multi-Agent-System.iml" afterPath="$PROJECT_DIR$/.idea/Multi-Agent-System.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/week_5/modulus_consensus.py" afterPath="$PROJECT_DIR$/week_5/modulus_consensus.py" />
-      <change beforePath="$PROJECT_DIR$/week_5/pngs/graph_balanced_4_4_nodes.png" afterPath="$PROJECT_DIR$/week_5/pngs/graph_balanced_4_4_nodes.png" />
-      <change beforePath="$PROJECT_DIR$/week_5/pngs/modulus_consensus_balanced_4_4_nodes.png" afterPath="$PROJECT_DIR$/week_5/pngs/modulus_consensus_balanced_4_4_nodes.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +25,12 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Multi_Agent_System$linear_controller.coverage" NAME="linear_controller Coverage Results" MODIFIED="1510987997189" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_2/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$ftc_cai_robustness_attack_check.coverage" NAME="ftc_cai_robustness_attack_check Coverage Results" MODIFIED="1514816043450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_3/code" />
+    <SUITE FILE_PATH="coverage/Multi_Agent_System$signed_consensus.coverage" NAME="signed_consensus Coverage Results" MODIFIED="1515479117330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_6" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$counter_example.coverage" NAME="counter_example Coverage Results" MODIFIED="1514819496947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_4/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$numerical_example_unidirectional.coverage" NAME="numerical_example_unidirectional Coverage Results" MODIFIED="1514860712693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_4/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$W_MSR.coverage" NAME="W-MSR Coverage Results" MODIFIED="1511093731346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_1/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$WACS.coverage" NAME="WACS Coverage Results" MODIFIED="1508497965732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Multi_Agent_System$modulus_consensus.coverage" NAME="modulus_consensus Coverage Results" MODIFIED="1515387431533" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_5" />
+    <SUITE FILE_PATH="coverage/Multi_Agent_System$modulus_consensus.coverage" NAME="modulus_consensus Coverage Results" MODIFIED="1515474003800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_5" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$FTC_CAI.coverage" NAME="FTC-CAI Coverage Results" MODIFIED="1511148483207" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_2/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$w_msr.coverage" NAME="w_msr Coverage Results" MODIFIED="1514966307941" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_1/code" />
     <SUITE FILE_PATH="coverage/Multi_Agent_System$ftc_cai__1_.coverage" NAME="ftc_cai (1) Coverage Results" MODIFIED="1513067604459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/week_2/code" />
@@ -50,36 +57,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.py">
+      <file leaf-file-name="signed_consensus.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week_6/signed_consensus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
+            <state relative-caret-position="-141">
+              <caret line="106" column="31" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
               <folding>
-                <element signature="e#0#31#0" expanded="true" />
+                <element signature="e#86#117#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="counter_example.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week_5/counter_example.py">
+      <file leaf-file-name="fixed_signed_consensus.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week_6/pngs/fixed_signed_consensus.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="switching_signed_consensus.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/week_6/pngs/switching_signed_consensus.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="original_fixed_signed_consensus.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week_6/pngs/original_fixed_signed_consensus.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="switching_system.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week_6/pngs/switching_system.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="original_switching_signed_consensus.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week_6/pngs/original_switching_signed_consensus.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.in" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/week_6/data/data.in">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modulus_consensus.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modulus_consensus.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/week_5/modulus_consensus.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1906">
-              <caret line="87" column="24" lean-forward="false" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
-              <folding>
-                <element signature="e#94#105#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="177" column="14" lean-forward="true" selection-start-line="171" selection-start-column="4" selection-end-line="177" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,6 +194,9 @@
         <option value="$PROJECT_DIR$/week_4/code/numerical_example_bidirectional.py" />
         <option value="$PROJECT_DIR$/week_1/code/data/data.in" />
         <option value="$PROJECT_DIR$/week_5/modulus_consensus.py" />
+        <option value="$PROJECT_DIR$/week_6/bipartite_consensus_directed_graph.py" />
+        <option value="$PROJECT_DIR$/week_6/data/data.in" />
+        <option value="$PROJECT_DIR$/week_6/signed_consensus.py" />
       </list>
     </option>
   </component>
@@ -183,7 +226,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -200,39 +242,36 @@
             <path>
               <item name="Multi-Agent-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Multi-Agent-System" type="462c0819:PsiDirectoryNode" />
-              <item name="week_1" type="462c0819:PsiDirectoryNode" />
+              <item name="week_5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Multi-Agent-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Multi-Agent-System" type="462c0819:PsiDirectoryNode" />
-              <item name="week_1" type="462c0819:PsiDirectoryNode" />
+              <item name="week_6" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Multi-Agent-System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Multi-Agent-System" type="462c0819:PsiDirectoryNode" />
+              <item name="week_6" type="462c0819:PsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Multi-Agent-System" type="b2602c69:ProjectViewProjectNode" />
               <item name="Multi-Agent-System" type="462c0819:PsiDirectoryNode" />
-              <item name="week_2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Multi-Agent-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Multi-Agent-System" type="462c0819:PsiDirectoryNode" />
-              <item name="week_3" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Multi-Agent-System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Multi-Agent-System" type="462c0819:PsiDirectoryNode" />
-              <item name="week_5" type="462c0819:PsiDirectoryNode" />
+              <item name="week_6" type="462c0819:PsiDirectoryNode" />
+              <item name="pngs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="SearchEverywhereHistoryKey" value="Bernoulli&#9;null&#9;null&#10;bernoulli&#9;FILE&#9;file://D:/Softwares/Anaconda3/envs/tensorflow/Lib/site-packages/tensorflow/python/ops/distributions/bernoulli.py" />
   </component>
   <component name="PyConsoleOptionsProvider">
@@ -244,19 +283,19 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Python\Multi-Agent-System\week_1" />
-      <recent name="E:\Python\Multi-Agent-System\week_2" />
-      <recent name="E:\Python\Multi-Agent-System\week_3" />
-      <recent name="E:\Python\Multi-Agent-System\week_4" />
-      <recent name="E:\Python\Multi-Agent-System\week_5" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week_6/pngs" />
       <recent name="E:\Python\Multi-Agent-System\week_4\code\data" />
       <recent name="E:\Python\Multi-Agent-System\week_5\code\data" />
       <recent name="E:\Python\Multi-Agent-System\week_3\code\data" />
       <recent name="E:\Python\pycharm\Multi-Agent-System\week_4\code\data" />
-      <recent name="E:\Python\pycharm\Multi-Agent-System\week_4" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/week_6/pngs" />
+      <recent name="E:\Python\Multi-Agent-System\week_1" />
+      <recent name="E:\Python\Multi-Agent-System\week_2" />
+      <recent name="E:\Python\Multi-Agent-System\week_3" />
+      <recent name="E:\Python\Multi-Agent-System\week_4" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -271,7 +310,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.modulus_consensus">
+  <component name="RunManager" selected="Python.signed_consensus">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Multi-Agent-System" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="modulus_consensus" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -288,6 +346,25 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_5/modulus_consensus.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="signed_consensus" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/week_6" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Multi-Agent-System" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/week_6/signed_consensus.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
@@ -374,25 +451,6 @@
       <option name="ADDITIONAL_ARGS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Multi-Agent-System" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="true" type="Tox" factoryName="Tox">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -456,14 +514,16 @@
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.test" />
       <item index="1" class="java.lang.String" itemvalue="Python.modulus_consensus" />
+      <item index="2" class="java.lang.String" itemvalue="Python.signed_consensus" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python.modulus_consensus" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Python.signed_consensus" />
+        <item index="1" class="java.lang.String" itemvalue="Python.modulus_consensus" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -723,7 +783,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515382797711</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="修改networkx2.0版本更新后某些api不能用的问题！">
+      <created>1515387611116</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1515387611116</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView">
@@ -741,23 +808,24 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32666665" sideWeight="0.50390625" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="270" height="600" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64730877" sideWeight="0.48707592" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32666665" sideWeight="0.49609375" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40482953" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2253635" sideWeight="0.48295453" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23182553" sideWeight="0.48295453" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.9220963" sideWeight="0.51704544" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64730877" sideWeight="0.5129241" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3611898" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36132598" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281768" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Concurrent Activities Diagram" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914287" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19829424" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -798,7 +866,8 @@
     <MESSAGE value="添加假的第三周的内容" />
     <MESSAGE value="添加假的第四周的内容" />
     <MESSAGE value="添加假的第五周的内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加假的第五周的内容" />
+    <MESSAGE value="修改networkx2.0版本更新后某些api不能用的问题！" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改networkx2.0版本更新后某些api不能用的问题！" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -818,67 +887,17 @@
           <line>47</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/week_6/signed_consensus.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-5-Attack-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-6-Attack-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-4-Attack-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-6-Attack-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-14-Attack-0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-14-Attack-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-1-Attack-0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-0.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Balanced-With-7_7-Nodes-Malicious-Node-2-Attack-2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week_3/pngs/Finit-Time-Consensus-Unbalanced-With-7_7-Nodes.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1011,9 +1030,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5170">
           <caret line="235" column="10" lean-forward="false" selection-start-line="235" selection-start-column="10" selection-end-line="235" selection-end-column="10" />
-          <folding>
-            <element signature="e#94#105#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1045,7 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1335">
           <caret line="92" column="31" lean-forward="false" selection-start-line="92" selection-start-column="31" selection-end-line="92" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1058,7 +1074,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1070,17 +1085,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="281" column="29" lean-forward="false" selection-start-line="281" selection-start-column="29" selection-end-line="281" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.py">
+    <entry file="file://$PROJECT_DIR$/utils/util.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1092,14 +1104,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week_5/modulus_consensus.py">
+    <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1906">
-          <caret line="87" column="24" lean-forward="false" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
           <folding>
-            <element signature="e#94#105#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/data/data.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_5/modulus_consensus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="177" column="14" lean-forward="true" selection-start-line="171" selection-start-column="4" selection-end-line="177" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/pngs/signed_consensus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.6/site-packages/networkx/classes/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="1766" column="0" lean-forward="false" selection-start-line="1766" selection-start-column="0" selection-end-line="1766" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/signed_consensus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="106" column="31" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
+          <folding>
+            <element signature="e#86#117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/pngs/fixed_signed_consensus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/pngs/original_fixed_signed_consensus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/pngs/switching_system.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/pngs/original_switching_signed_consensus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/pngs/switching_signed_censensus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/pngs/switching_signed_consensus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>
