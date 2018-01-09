@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72485066-3663-42fa-9bd2-de18c54552fb" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/data/data.in" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/fixed_signed_consensus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/fixed_topology.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/original_fixed_signed_consensus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/original_switching_signed_consensus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/switching_signed_consensus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/switching_system.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/pngs/switching_topology.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/week_6/signed_consensus.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/Multi-Agent-System.iml" afterPath="$PROJECT_DIR$/.idea/Multi-Agent-System.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +46,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="signed_consensus.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="signed_consensus.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/week_6/signed_consensus.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-141">
@@ -66,27 +55,6 @@
                 <element signature="e#86#117#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fixed_signed_consensus.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week_6/pngs/fixed_signed_consensus.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="switching_signed_consensus.png" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/week_6/pngs/switching_signed_consensus.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="original_fixed_signed_consensus.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/week_6/pngs/original_fixed_signed_consensus.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -790,7 +758,14 @@
       <option name="project" value="LOCAL" />
       <updated>1515387611116</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="添加week_6">
+      <created>1515480085874</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1515480085874</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TodoView">
@@ -867,7 +842,8 @@
     <MESSAGE value="添加假的第四周的内容" />
     <MESSAGE value="添加假的第五周的内容" />
     <MESSAGE value="修改networkx2.0版本更新后某些api不能用的问题！" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改networkx2.0版本更新后某些api不能用的问题！" />
+    <MESSAGE value="添加week_6" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加week_6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1143,21 +1119,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/week_6/signed_consensus.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-141">
-          <caret line="106" column="31" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
-          <folding>
-            <element signature="e#86#117#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/week_6/pngs/fixed_signed_consensus.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/week_6/pngs/original_fixed_signed_consensus.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1181,6 +1142,21 @@
     <entry file="file://$PROJECT_DIR$/week_6/pngs/switching_signed_consensus.png">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/pngs/fixed_signed_consensus.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/week_6/signed_consensus.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-141">
+          <caret line="106" column="31" lean-forward="true" selection-start-line="106" selection-start-column="31" selection-end-line="106" selection-end-column="31" />
+          <folding>
+            <element signature="e#86#117#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
