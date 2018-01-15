@@ -106,6 +106,7 @@ def is_square(n):
     else:
         return False
 
+
 def simulate():
     initialize()
     # value of u

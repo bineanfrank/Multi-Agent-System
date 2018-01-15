@@ -1,4 +1,5 @@
-# Finite-Time Consensus for Multiagent Systems With Cooperative and Antagonistic Interactions
+# Finite-Time Consensus for Multiagent Systems With Cooperative and
+# Antagonistic Interactions
 import math
 import matplotlib.pyplot as plt
 import networkx as nx
@@ -30,7 +31,8 @@ def get_limited_neighbors(graph, neighbors, time_step, cur_value, F):
     neighbor_values = []
 
     for i in neighbors:
-        neighbor_values.append({'node': i, 'value': graph.node[i]['value'][time_step]})
+        neighbor_values.append(
+            {'node': i, 'value': graph.node[i]['value'][time_step]})
 
     # print(neighbor_values)
 
@@ -79,10 +81,12 @@ def create_graph(data_path, weighted=False):
                 flag = True
                 for num in range(2, len(tmp_input)):
                     if flag:
-                        graph.add_edge(int(tmp_input[0]), int(tmp_input[num]), weight=0.0)
+                        graph.add_edge(int(tmp_input[0]), int(
+                            tmp_input[num]), weight=0.0)
                         flag = False
                     else:
-                        graph.add_edge(int(tmp_input[0]), int(tmp_input[num - 1]), weight=float(tmp_input[num]))
+                        graph.add_edge(int(tmp_input[0]), int(
+                            tmp_input[num - 1]), weight=float(tmp_input[num]))
                         flag = True
             else:
                 for num in range(2, len(tmp_input)):
@@ -142,7 +146,8 @@ def drawGraph(fg, name):
     nx.draw_networkx_nodes(fg, pos, node_size=450)
     nx.draw_networkx_edges(fg, pos)
     nx.draw_networkx_labels(fg, pos)
-    nx.draw_networkx_edge_labels(fg, pos, edge_labels=nx.get_edge_attributes(fg, 'weight'), label_pos=0.3)
+    nx.draw_networkx_edge_labels(
+        fg, pos, edge_labels=nx.get_edge_attributes(fg, 'weight'), label_pos=0.3)
     plt.savefig("./pngs/" + name + ".png")
     plt.show()
 
@@ -163,7 +168,8 @@ def ftc_cai(data_path, fig_name, fig_path, graph_name):
             for j in neighbors:
                 sum += (matrix[i - 1][j - 1] * (
                     graph.node[j]['value'][time_step] - sign(matrix[i - 1][j - 1]) * graph.node[i]['value'][time_step]))
-            final_result = graph.node[i]['value'][time_step] + 0.01 * sign(sum) * (abs(sum) ** a)
+            final_result = graph.node[i]['value'][
+                time_step] + 0.01 * sign(sum) * (abs(sum) ** a)
             graph.node[i]['value'].append(final_result)
 
     for i in graph.nodes():
@@ -216,7 +222,8 @@ def ftc_cai_f_local(data_path, fig_path, fig_name, malicious_node, attack_mode):
             for j in neighbors:
                 sum += (matrix[i - 1][j - 1] * (
                     graph.node[j]['value'][time_step] - sign(matrix[i - 1][j - 1]) * graph.node[i]['value'][time_step]))
-            final_result = graph.node[i]['value'][time_step] + 0.001 * sign(sum) * (abs(sum) ** a)
+            final_result = graph.node[i]['value'][
+                time_step] + 0.001 * sign(sum) * (abs(sum) ** a)
             graph.node[i]['value'].append(final_result)
 
     # for i in graph.nodes():
@@ -239,7 +246,8 @@ if __name__ == '__main__':
     # ftc_cai(data_path="./data/data-balanced-with-7_7-nodes.in", fig_path="./pngs",
     #         fig_name="modulus_consensus_balanced_7_7_nodes", graph_name="graph_balanced_7_7_nodes")
     # ftc_cai(data_path="./data/data-unbalanced-with-7_7-nodes.in", fig_path="./pngs",
-    #         fig_name="modulus_consensus_unbalanced_7_7_nodes", graph_name="graph_unbalanced_7_7_nodes")
+    # fig_name="modulus_consensus_unbalanced_7_7_nodes",
+    # graph_name="graph_unbalanced_7_7_nodes")
 
     ftc_cai(data_path="./data/data-balanced-with-4_4-nodes.in", fig_path="./pngs",
             fig_name="modulus_consensus_balanced_4_4_nodes", graph_name="graph_balanced_4_4_nodes")
@@ -249,4 +257,5 @@ if __name__ == '__main__':
     # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
     #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=1)
     # ftc_cai_f_local(data_path="./data/data-connected-with-7_7-nodes.in", fig_path="./pngs",
-    #                 fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes", malicious_node=i, attack_mode=2)
+    # fig_name="Finit-Time-Consensus-Balanced-With-7_7-Nodes",
+    # malicious_node=i, attack_mode=2)

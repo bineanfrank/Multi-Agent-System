@@ -1,4 +1,5 @@
-# Signed consensus problems on networks of agents with fixed and switching topologies
+# Signed consensus problems on networks of agents with fixed and switching
+# topologies
 import matplotlib.pyplot as plt
 import networkx as nx
 
@@ -26,7 +27,8 @@ def fix_topology():
     global D
     global X
     global y
-    edges = [(1, 2), (1, 8), (3, 4), (4, 5), (6, 4), (7, 1), (7, 3), (7, 6), (8, 7)]
+    edges = [(1, 2), (1, 8), (3, 4), (4, 5), (6, 4),
+             (7, 1), (7, 3), (7, 6), (8, 7)]
     graph = nx.DiGraph(edges)
 
     D = [1, -1, -1, -1, 1, 1, -1, -1]
@@ -41,7 +43,8 @@ def fix_topology():
             in_neighbors = get_in_neighbors(i + 1, in_edges)
             delta = 0
             for neighbor in in_neighbors:
-                delta += (D[neighbor - 1] * X[neighbor - 1][time_step] - D[i] * current_value)
+                delta += (D[neighbor - 1] * X[neighbor - 1]
+                          [time_step] - D[i] * current_value)
             next_value = X[i][time_step] + y * delta * D[i]
             X[i].append(next_value)
     plt.xlabel("time-step")
@@ -128,7 +131,8 @@ def switching_topology():
             in_neighbors = get_in_neighbors(i + 1, in_edges)
             delta = 0
             for neighbor in in_neighbors:
-                delta += (D[neighbor - 1] * X[neighbor - 1][time_step] - D[i] * current_value)
+                delta += (D[neighbor - 1] * X[neighbor - 1]
+                          [time_step] - D[i] * current_value)
             next_value = X[i][time_step] + current_y * delta * D[i]
             X[i].append(next_value)
     plt.xlabel("time-step")
