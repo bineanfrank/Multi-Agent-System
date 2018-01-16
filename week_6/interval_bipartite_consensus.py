@@ -3,6 +3,7 @@
 # Digraphs
 import matplotlib.pyplot as plt
 import networkx as nx
+import numpy as np
 
 # for fix topology
 global graph
@@ -38,9 +39,9 @@ def interval_bipartite_consensus(graph_no):
     edges2 = [(1, 3, 5.0), (2, 1, -3.0), (2, 5, -4.0), (2, 4, 2.0), (3, 2, 1.0),
               (3, 6, -6.0), (4, 5, 8.0), (5, 6, 7.0)]
     edges3 = [(2, 1, -3.0), (1, 3, 5.0), (1, 2, -1.0), (2, 4, 2.0),
-              (3, 5, 4.0), (3, 6, 6.0), (3, 4, -9.0), (4, 5, 8.0), (5, 6, 7.0)]
+              (3, 4, -9.0), (3, 5, 4.0), (3, 6, 6.0), (4, 5, 8.0), (5, 6, 7.0)]
     edges4 = [(2, 1, -3.0), (1, 3, 5.0), (1, 2, -1.0), (2, 4, 2.0),
-              (3, 5, 4.0), (3, 6, 6.0), (3, 4, 9.0), (4, 5, 8.0), (5, 6, -7.0)]
+              (3, 4, 9.0), (3, 5, 4.0), (4, 5, 8.0), (5, 6, -7.0), (6, 3, 6.0)]
 
     graph = nx.DiGraph()
 
@@ -57,10 +58,10 @@ def interval_bipartite_consensus(graph_no):
         graph.add_weighted_edges_from(edges4)
 
     X = [[1], [2], [3], [-2], [-1], [-6]]
-    y = 0.01
+    y = 0.02
 
     '''start interaction'''
-    for time_step in range(450):
+    for time_step in range(200):
         for i in range(len(X)):
             current_value = X[i][time_step]
             in_edges = graph.in_edges(i + 1)
@@ -73,7 +74,10 @@ def interval_bipartite_consensus(graph_no):
             X[i].append(next_value)
     plt.xlabel("time-step")
     plt.ylabel("values")
-    x_axis = range(451)
+    x_axis = range(201)
+
+    tmp = np.array(X)
+    print(tmp[:, -1])
     for i in graph.nodes():
         plt.plot(x_axis, X[i - 1], label='node ' + str(i))
     plt.legend(loc='best', ncol=1)
