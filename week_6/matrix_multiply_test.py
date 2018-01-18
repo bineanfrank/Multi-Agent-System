@@ -7,6 +7,8 @@ X = np.mat(np.array([4, 2, 1]).reshape(3, 1))
 
 X1 = [[4], [2], [1]]
 
+graph.add_weighted_edges_from()
+
 for i in range(30):
     X = X + 0.1 * (-L) * X
     for i in range(3):
