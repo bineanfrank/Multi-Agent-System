@@ -1,5 +1,6 @@
 # matrix multiply tests
 import numpy as np
+import random
 import matplotlib.pyplot as plt
 
 L = np.mat(np.array([1, -1, 0, 0, 1.5, -1.5, -2, 0, 2]).reshape(3, 3))
