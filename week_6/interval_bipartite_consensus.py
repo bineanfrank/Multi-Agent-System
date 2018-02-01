@@ -27,20 +27,20 @@ def get_in_neighbors(node, in_edge):
     return in_neighbors
 
 # 获取一个图的邻接矩阵
-# def get_adj_mat(graph):
-#     """
-#     get the adjacency matrix
-#     :param graph:
-#     :return:
-#     """
-#     size = len(graph.nodes())
-#     matrix = np.zeros(shape=(size, size), dtype=np.float)
+def get_adj_mat(graph):
+    """
+    get the adjacency matrix
+    :param graph:
+    :return:
+    """
+    size = len(graph.nodes())
+    matrix = np.zeros(shape=(size, size), dtype=np.float)
 
-#     for edge in graph.edges(data=True):
-#         matrix[edge[0] - 1][edge[1] - 1] = edge[2]['weight']
-#         matrix[edge[1] - 1][edge[0] - 1] = edge[2]['weight']
+    for edge in graph.edges(data=True):
+        matrix[edge[0] - 1][edge[1] - 1] = edge[2]['weight']
+        matrix[edge[1] - 1][edge[0] - 1] = edge[2]['weight']
 
-#     return matrix
+    return matrix
 
 
 def interval_bipartite_consensus(graph_no):
@@ -75,6 +75,20 @@ def interval_bipartite_consensus(graph_no):
 
     X = [[1], [2], [3], [-2], [-1], [-6]]
     y = 0.02
+
+    adj_graph_1 = get_adj_mat(graph)
+    diagnal_matrix = []
+    for i in range(len(adj_graph_1)):
+        sum = 0
+        for j in range(len(adj_graph_1)):
+            sum += abs(adj_graph_1[i][j])
+        diagnal_matrix.append(sum)
+    diagnal_matrix = np.mat(np.diag(diagnal_matrix))
+
+    L = diagnal_matrix - adj_graph_1
+    print("Linear")
+    print(np.linalg.eig(L))
+    print("Linear")
 
     '''start interaction'''
     for time_step in range(200):

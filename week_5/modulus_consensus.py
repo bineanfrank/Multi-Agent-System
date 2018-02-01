@@ -110,7 +110,7 @@ def get_adj_mat(graph):
     return matrix
 
 
-def drawGraph(fg, name):
+def draw_graph(fg, name):
     """
     (2, 2)-robustness => (2, 1)-robustness => 2-robustness
     :param fg: 
@@ -158,7 +158,7 @@ def ftc_cai(data_path, fig_name, fig_path, graph_name):
     # graph = create_graph(data_path=data_path)
     matrix = get_adj_mat(graph=graph)
 
-    drawGraph(graph, graph_name)
+    draw_graph(graph, graph_name)
 
     print(matrix)
     for time_step in range(10000):
