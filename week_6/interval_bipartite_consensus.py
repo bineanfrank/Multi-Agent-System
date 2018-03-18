@@ -119,4 +119,4 @@ def interval_bipartite_consensus(graph_no):
 if __name__ == '__main__':
         # for i in range(1, 5):
         # 	interval_bipartite_consensus(graph_no=i
-    interval_bipartite_consensus(graph_no=1)
+    interval_bipartite_consensus(graph_no=3)
