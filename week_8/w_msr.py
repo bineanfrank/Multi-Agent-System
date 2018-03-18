@@ -61,6 +61,10 @@ def create_graph_by_adjacency_matrix(from_file, n, left_side):
             if not graph.has_edge(i + 1, j + 1):
                 graph.add_edge(i + 1, j + 1, sign=sign)  # True 代表正， False代表负
 
+    import robustness_checker
+    a, b = robustness_checker.determine_robustness_multi_process(matrix)
+    print(a, b)
+
     return graph
 
 
