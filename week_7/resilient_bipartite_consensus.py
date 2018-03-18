@@ -236,7 +236,7 @@ if __name__ == '__main__':
                                   fig_name="resilient_bipartite_consensus",
                                   malicious_node=1,
                                   attack_mode=0)
-    # modulus_consensus(data_path="./data/data_balanced_7_7_nodes.in",
-    #                   fig_path="./pngs",
-    #                   fig_name="modulus_consensus",
-    #                   graph_name="balanced_7_7_nodes")
+    modulus_consensus(data_path="./data/data_balanced_7_7_nodes.in",
+                      fig_path="./pngs",
+                      fig_name="modulus_consensus",
+                      graph_name="balanced_7_7_nodes")

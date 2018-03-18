@@ -16,36 +16,51 @@ def sign(num):
 
 
 def create_graph_by_adjacency_matrix(from_file, n, left_side):
-    
+
+    graph = nx.DiGraph()
+
+    for i in range(1, n + 1):
+        graph.add_node(i, value=[])
+
     matrix = np.identity(n)
     i = 0
     j = 0
-    
+    flag = True
     with open(from_file) as f:
         for line in f.readlines():
             tmp_input = line.strip('\n').split(' ')
             j = 0
+            print(tmp_input)
             for tmp in tmp_input:
-                matrix[i][j] = int(tmp)
+                if flag:
+                    graph.node[j + 1]['value'].append(float(tmp))
+                else:
+                    matrix[i][j] = int(tmp)
                 j += 1
-            i += 1
+            if not flag:
+                i += 1
+            flag = False
 
-    import robustness_checker
-    r,s = robustness_checker.determine_robustness_multi_process(matrix)
+    # import robustness_checker
+    # r,s = robustness_checker.determine_robustness_multi_process(matrix)
 
-    print(r, s)
+    # print(r, s)
 
-    
-    graph = nx.DiGraph()
-    for i in range(1, n + 1):
-        graph.add_node(i)
     for i in range(n):
         for j in range(n):
             if matrix[i][j] == 1:
-                graph.add_edge(i + 1, j + 1)
+                if i + 1 in left_side:
+                    if j + 1 in left_side:
+                        sign = 1
+                    else:
+                        sign = -1
+            else:
+                sign = 0
 
-    print(graph.nodes(data=True))
-    print(graph.edges(data=True))
+
+            if not graph.has_edge(i + 1, j + 1):
+                graph.add_edge(i + 1, j + 1, sign=sign)  # True 代表正， False代表负
+
     return graph
 
 
@@ -83,7 +98,7 @@ def get_limited_neighbors(node_no, graph, neighbors, time_step, cur_value, F):
     index = 0
     index_end = len(neighbor_values) - 1
     while index < F:
-        #if abs(neighbor_values[index_end]['value']) > abs(cur_value):
+        # if abs(neighbor_values[index_end]['value']) > abs(cur_value):
         if neighbor_values[index_end]['value'] > cur_value:
             index_end -= 1
             index += 1
@@ -169,7 +184,7 @@ def draw_graph(fg, name):
     nx.draw_networkx_edges(fg, pos)
     nx.draw_networkx_labels(fg, pos)
     nx.draw_networkx_edge_labels(
-        fg, pos, edge_labels=nx.get_edge_attributes(fg, 'weight'), label_pos=0.3)
+        fg, pos, edge_labels=nx.get_edge_attributes(fg, 'sign'), label_pos=0.3)
     plt.savefig("./pngs/graph_" + name + ".png")
     plt.show()
 
@@ -177,19 +192,51 @@ def draw_graph(fg, name):
 """
 领接矩阵每一行绝对值相加等于1，使得|A|是一个stochastic matrix
 """
+
+
 def w_msr():
-    graph = nx.from_numpy_matrix()
+    graph = create_graph_by_adjacency_matrix(
+        "./data/data_2_robust_7_7_nodes.in", 14, left_side=[1, 2, 12, 11, 3, 13, 10])
+
+    draw_graph(graph, "2_robust_7_7_nodes")
+    print(graph.edges(data=True))
+    for time_step in range(1000):
+        for i in graph.nodes():
+            # if i == 4:
+            #     if time_step == 1:
+            #         graph.node[i]['value'].append(graph.node[i]['value'][time_step] - 4)
+            #     else:
+            #         graph.node[i]['value'].append(graph.node[i]['value'][time_step] + 0.01)
+            #     continue
+            current_value = graph.node[i]['value'][time_step]
+            in_edges = graph.in_edges(i)
+
+            # print("in_edges:", in_edges)
+
+            in_neighbors = get_in_neighbors(i, in_edges)
+            delta = 0.0
+            weight = 1.0 / len(in_neighbors)
+            # print("neighbors:", in_neighbors)
+            for j in in_neighbors:
+                current_neighbor_value = graph.node[j]['value'][time_step]
+                sgn = graph[j][i]['sign']
+                print("sgn:", sgn)
+                delta += weight * (current_neighbor_value *
+                                   sign(sgn) - current_value)
+            final_result = current_value + 0.01 * delta
+            graph.node[i]['value'].append(final_result)
+
+    plt.xlabel("time-step")
+    plt.ylabel("values")
+
+    # print("shape" + str(len(graph.node[]['value'])))
+
+    x_axis = range(1001)
+    for i in graph.nodes():
+        plt.plot(x_axis, graph.node[i]['value'])
+    plt.savefig("./pngs/w_msr_2_robust_7_7_nodes.png")
+    plt.show()
+
 
 if __name__ == '__main__':
-    graph = create_graph_by_adjacency_matrix("./data/data_4_robust_7_7_nodes.in", 14, left_side=[0, 1,11,10,2,12,9])
-    # graph = nx.from_numpy_matrix(matrix)
-    # print(graph.edges(data=True))
-    # print(type(graph))
-    # draw_graph(graph, "3_robust_7_7_nodes")
-
-
-
-
-
-
-
+    w_msr()
