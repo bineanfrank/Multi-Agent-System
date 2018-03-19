@@ -41,10 +41,10 @@ def create_graph_by_adjacency_matrix(from_file, n, left_side):
                 i += 1
             flag = False
 
-    # import robustness_checker
-    # r,s = robustness_checker.determine_robustness_multi_process(matrix)
+    import robustness_checker
+    r,s = robustness_checker.determine_robustness_multi_process(matrix)
 
-    # print(r, s)
+    print(r, s)
 
     for i in range(n):
         for j in range(n):
@@ -53,17 +53,15 @@ def create_graph_by_adjacency_matrix(from_file, n, left_side):
                     if j + 1 in left_side:
                         sign = 1
                     else:
+                        print("i + 1 = ", i + 1, ",j + 1 =", j + 1, ",sign = ", -1)
                         sign = -1
-            else:
-                sign = 0
-
-
-            if not graph.has_edge(i + 1, j + 1):
+                
+                else: # i + 1不在左边
+                    if j + 1 in left_side:
+                        sign = -1
+                    else:
+                        sign = 1
                 graph.add_edge(i + 1, j + 1, sign=sign)  # True 代表正， False代表负
-
-    import robustness_checker
-    a, b = robustness_checker.determine_robustness_multi_process(matrix)
-    print(a, b)
 
     return graph
 
@@ -200,34 +198,37 @@ def draw_graph(fg, name):
 
 def w_msr():
     graph = create_graph_by_adjacency_matrix(
-        "./data/data_2_robust_7_7_nodes.in", 14, left_side=[1, 2, 12, 11, 3, 13, 10])
+        "./data/data_3_robust_7_7_nodes.in", 14, left_side=[1, 2, 12, 11, 3, 13, 10])
 
-    draw_graph(graph, "2_robust_7_7_nodes")
-    print(graph.edges(data=True))
-    for time_step in range(1000):
+    draw_graph(graph, "3_robust_7_7_nodes")
+    # print(graph.edges(data=True))
+    for time_step in range(200):
         for i in graph.nodes():
-            # if i == 4:
-            #     if time_step == 1:
-            #         graph.node[i]['value'].append(graph.node[i]['value'][time_step] - 4)
-            #     else:
-            #         graph.node[i]['value'].append(graph.node[i]['value'][time_step] + 0.01)
-            #     continue
+            if i == 4:
+                if time_step == 1:
+                    graph.node[i]['value'].append(graph.node[i]['value'][time_step] - 4)
+                else:
+                    graph.node[i]['value'].append(graph.node[i]['value'][time_step] + 0.05)
+                continue
             current_value = graph.node[i]['value'][time_step]
             in_edges = graph.in_edges(i)
 
             # print("in_edges:", in_edges)
 
             in_neighbors = get_in_neighbors(i, in_edges)
+
+            neighbors = get_limited_neighbors(node_no=i, graph=graph, neighbors=in_neighbors, time_step=time_step,
+                                              cur_value=current_value, F=1)
             delta = 0.0
-            weight = 1.0 / len(in_neighbors)
+            weight = 1.0 / len(neighbors) # 2F+1-robust, 所以不会出现个数为0的情况
             # print("neighbors:", in_neighbors)
-            for j in in_neighbors:
+            for j in neighbors:
                 current_neighbor_value = graph.node[j]['value'][time_step]
                 sgn = graph[j][i]['sign']
-                print("sgn:", sgn)
+                # print("sgn:", sgn)
                 delta += weight * (current_neighbor_value *
                                    sign(sgn) - current_value)
-            final_result = current_value + 0.01 * delta
+            final_result = current_value + 0.1 * delta
             graph.node[i]['value'].append(final_result)
 
     plt.xlabel("time-step")
@@ -235,10 +236,10 @@ def w_msr():
 
     # print("shape" + str(len(graph.node[]['value'])))
 
-    x_axis = range(1001)
+    x_axis = range(201)
     for i in graph.nodes():
         plt.plot(x_axis, graph.node[i]['value'])
-    plt.savefig("./pngs/w_msr_2_robust_7_7_nodes.png")
+    plt.savefig("./pngs/w_msr_3_robust_7_7_nodes.png")
     plt.show()
 
 
